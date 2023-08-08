@@ -77,3 +77,5 @@ The Client sends a GET request to the WeatherMicroservice with the latitude and 
 The WeatherMicroservice makes an API request to the WeatherAPI, passing the provided location coordinates.
 The WeatherAPI processes the request and returns weather data in JSON format to the WeatherMicroservice.
 The WeatherMicroservice receives the weather data from the WeatherAPI and sends it back as a JSON response to the Client.
+
+
