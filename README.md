@@ -79,3 +79,4 @@ The WeatherAPI processes the request and returns weather data in JSON format to 
 The WeatherMicroservice receives the weather data from the WeatherAPI and sends it back as a JSON response to the Client.
 
 
+[UML Diagram Weather Microservice.pdf](https://github.com/HanaAlizai/CS361/files/12287225/UML.Diagram.Weather.Microservice.pdf)
