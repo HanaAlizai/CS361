@@ -11,12 +11,13 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
+CORS(app)  # Add this line to enable CORS for your app
 
 # Weather API base URL
 WEATHER_API_URL = 'http://api.weatherapi.com/v1/current.json'
 
 @app.route('/weather', methods=['GET'])
-@cross_origin()
+@cross_origin()  # Add this decorator to enable CORS for this route
 def get_weather():
     # Get latitude and longitude from query parameters
     latitude = request.args.get('latitude')
