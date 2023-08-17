@@ -8,6 +8,7 @@
 
 import requests
 from flask import Flask, request, jsonify
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
 
@@ -15,6 +16,7 @@ app = Flask(__name__)
 WEATHER_API_URL = 'http://api.weatherapi.com/v1/current.json'
 
 @app.route('/weather', methods=['GET'])
+@cross_origin()
 def get_weather():
     # Get latitude and longitude from query parameters
     latitude = request.args.get('latitude')
